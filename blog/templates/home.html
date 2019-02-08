@@ -1,0 +1,19 @@
+<html>
+    <head>home</head>
+    <body>
+        <table border='1'>
+            <tr>
+                <td><h1>First name</h1></td>
+                <td><h1>Last name</h1></td>
+            </tr>
+            {% for instance in instances %}
+            <tr>
+                <td><h1>{{ instance.first_name }}</h1></td>
+                <td><h1>{{ instance.last_name }}</h1></td>
+            </tr>
+            {% endfor %}
+            
+            
+        </table>
+    </body>
+</html>
